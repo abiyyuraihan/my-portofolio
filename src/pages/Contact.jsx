@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen mt-20 relative">
+    <div className="flex items-center px-4 justify-center min-h-screen lg:mt-20 md:mt-20 sm:mt-14 relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
