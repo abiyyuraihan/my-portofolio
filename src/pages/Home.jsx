@@ -15,7 +15,7 @@ const Home = () => {
 
     const topBlogs = [
         { id: 1, title: 'Coming Soon', description: 'ComingSoon', image: '/images/blog1.jpg' },
-        // { id: 2, title: 'Blog 2', description: 'Description of Blog 2', image: '/images/blog2.jpg' },
+        { id: 2, title: 'Blog 2', description: 'Description of Blog 2', image: '/images/blog2.jpg' },
         // { id: 3, title: 'Blog 3', description: 'Description of Blog 3', image: '/images/blog3.jpg' },
     ];
 
