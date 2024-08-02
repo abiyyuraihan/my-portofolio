@@ -11,6 +11,7 @@ import Blogs from './pages/Blogs';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NeuralBackground from './components/NeuralBackground';
+import ArduinoWokwi from './components/blogs/ArduinoWokwi';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/arduinowokwi" element={<ArduinoWokwi />} />
           </Routes>
         </Box>
         <Footer />

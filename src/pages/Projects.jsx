@@ -10,7 +10,7 @@ const topProjects = [
 
 const Projects = () => {
     return (
-        <div className="container mx-auto justify-center mt-12 py-16">
+        <div className="container px-4 mx-auto justify-center mt-12 py-16">
             <motion.section className="mb-12"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

@@ -4,7 +4,7 @@ import { FiArrowDownCircle, FiEye } from 'react-icons/fi';
 
 const Home = () => {
     const topBusinesses = [
-        { id: 1, title: 'Gesang Contractors', description: 'Description of Business 1', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFyvz_Fxz07jhWRzDs1eIBf52-g4i55-fEmg&s', lihat: 'https://gesangmusic.com/jasa-peredam-suara/'},
+        { id: 1, title: 'Gesang Contractors', description: 'Gesang Contractors adalah Perusahaan yang bergerak dalam bidang instalasi peredam suara berkualitas tinggi untuk berbagai kebutuhan, termasuk studio musik, ruang karaoke, dan gaming room.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFyvz_Fxz07jhWRzDs1eIBf52-g4i55-fEmg&s', lihat: 'https://gesangmusic.com/jasa-peredam-suara/'},
     ];
 
     const topProjects = [
@@ -14,9 +14,8 @@ const Home = () => {
     ];
 
     const topBlogs = [
-        { id: 1, title: 'Coming Soon', description: 'ComingSoon', image: '/images/blog1.jpg' },
-        { id: 2, title: 'Blog 2', description: 'Description of Blog 2', image: '/images/blog2.jpg' },
-        // { id: 3, title: 'Blog 3', description: 'Description of Blog 3', image: '/images/blog3.jpg' },
+        { id: 1, title: 'Wokwi Arduino Simulator', description: 'Belajar Arduino lebih mudah dengan wokwi', image: '/images/blogs/arduinowokwi/1.png', lihat: "/arduinowokwi" },
+        
     ];
 
     return (
@@ -156,11 +155,20 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.8 }}
-                            className="bg-stone-900 shadow rounded-lg p-6"
+                            className="bg-stone-900 shadow rounded-lg p-6 relative"
                         >
                             <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover rounded-lg mb-4" />
                             <h3 className="text-xl font-semibold text-gray-400 mb-2">{blog.title}</h3>
-                            <p className="text-gray-400">{blog.description}</p>
+                            <p className="text-gray-400 mb-16">{blog.description}</p>
+                            <div className="absolute bottom-3 right-4">
+                                <a
+                                    href={blog.lihat}
+                                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-400 bg-stone-800 hover:bg-stone-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-stone-900"
+                                >
+                                    <FiEye className="mr-2 h-5 w-5" />
+                                    Baca Blog
+                                </a>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

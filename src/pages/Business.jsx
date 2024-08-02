@@ -5,11 +5,11 @@ import { FiEye } from 'react-icons/fi';
 const Business = () => {
 
     const topBusinesses = [
-        { id: 1, title: 'Gesang Contractors', description: 'Description of Business 1', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFyvz_Fxz07jhWRzDs1eIBf52-g4i55-fEmg&s', lihat: 'https://gesangmusic.com/jasa-peredam-suara/' },
+        { id: 1, title: 'Gesang Contractors', description: 'Gesang Contractors adalah Perusahaan yang bergerak dalam bidang instalasi peredam suara berkualitas tinggi untuk berbagai kebutuhan, termasuk studio musik, ruang karaoke, dan gaming room.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFyvz_Fxz07jhWRzDs1eIBf52-g4i55-fEmg&s', lihat: 'https://gesangmusic.com/jasa-peredam-suara/' },
     ];
 
     return (
-        <div className="container mx-auto justify-center mt-12 py-16">
+        <div className="container px-4 mx-auto justify-center mt-12 py-16">
             <motion.section className="mb-12"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

@@ -17,7 +17,7 @@ const NeuralBackground = () => {
     window.addEventListener('resize', resizeCanvas);
 
     const neurons = [];
-    const numNeurons = Math.floor((window.innerWidth * window.innerHeight) / 10000); // Adjust neuron density
+    const numNeurons = Math.floor((window.innerWidth * window.innerHeight) / 10000);
 
     for (let i = 0; i < numNeurons; i++) {
       neurons.push({
@@ -73,7 +73,7 @@ const NeuralBackground = () => {
     <canvas
       ref={canvasRef}
       className="fixed w-screen h-screen"
-      style={{ opacity: 0.3 }}
+      style={{ opacity: 0.6 }}
     />
   );
 };
