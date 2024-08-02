@@ -23,12 +23,12 @@ const Footer = () => {
         <p className="text-center text-gray-400">
           {'Copyright © '}
           <a
-            href="https://your-website.com/"
+            href="https://justraihan.vercel.app/"
             className="text-white hover:text-stone-500"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Your Website
+            justraihan
           </a>{' '}
           {new Date().getFullYear()}
           {'.'}
